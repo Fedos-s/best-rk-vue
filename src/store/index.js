@@ -5,10 +5,14 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    scrollStatus: true,
   },
   getters: {
   },
   mutations: {
+    updateScrollStatus(state, status) {
+      state.scrollStatus = status;
+    },
   },
   actions: {
   },
